@@ -1,0 +1,9 @@
+
+from network import WLAN
+wlan = WLAN(mode=WLAN.STA)
+nets = wlan.scan()
+for net in nets:
+if net.ssid == 'YOUR_WIFI_SSID':
+wlan.connect(net.ssid, auth=(net.sec, 'YOUR_WIFI_PASSWORD'), timeout=5000)
+6
+ execfile("pysense_demo.py")
