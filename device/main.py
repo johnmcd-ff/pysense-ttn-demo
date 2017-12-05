@@ -56,3 +56,9 @@ if __name__ == '__main__':
     print("Try  typing a command like os.uname()")
     print("Run the LoRa OTAA demo execfile(\"otaa.py\")")
     print("Run the Pysense TTN demo execfile(\"pysense_demo.py\")")
+    print("\n\nHit ctrl+c to stop auto booting the pysense demo...\n\n")
+
+    for i in range(1,10):
+        time.sleep(1)
+
+    execfile("pysense_demo.py")

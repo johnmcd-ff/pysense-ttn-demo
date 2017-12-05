@@ -37,7 +37,7 @@ class Messages:
     def build_ipso_message(battery, pressure, temperature, light, humidity, acceleration):
         """Generate message IPSO Message"""
 
-        humidity = humidity * 0.5
+        humidity = humidity * 2
         humidity = clamp(humidity, 0, 0xff)
 
         pressure = pressure / 10
